@@ -1,17 +1,17 @@
-# Chat App (server)
+# Chat App — Server
 
-This folder contains the server for the Chat App. It is safe to use this repository as a standalone backend API, but you'll typically pair it with a frontend client for a complete user experience.
+Backend API for the Chat App. It works standalone (useful for mobile clients, testing, or running the API), but a frontend is needed for a full user experience.
 
-Quick setup
+Setup
 
-1. Copy the example env file and fill values:
+1. Copy the env example and add your values:
 
 ```bash
 cp server/.env.example server/.env
-# Edit server/.env and provide real credentials
+# edit server/.env
 ```
 
-2. Install dependencies and run the server:
+2. Install and run:
 
 ```bash
 cd server
@@ -19,25 +19,18 @@ npm install
 npm run server
 ```
 
-Prepare and push to a remote Git repo
-
-1. Initialize git (if not already):
+Push to GitHub
 
 ```bash
 git init
 git add .
-git commit -m "Initial commit: chat-app server"
+git commit -m "Initial commit"
 git branch -M main
-```
-
-2. Create a remote repo (GitHub/GitLab) and add it as `origin`:
-
-```bash
 git remote add origin https://github.com/<you>/<repo>.git
 git push -u origin main
 ```
 
 Notes
-- Do NOT commit your real `.env` file — it is ignored by `.gitignore`.
-- Optionally add a `repository` field to `server/package.json` with the repo URL.
-- For creating a repo from the command line you can use the `gh` CLI: `gh repo create <you>/<repo>`.
+- Don’t commit your real `.env` (it's in `.gitignore`).
+- Add a `repository` field to `server/package.json` if you want the repo URL included.
+- To create a repo from the command line, use: `gh repo create <you>/<repo>`.
