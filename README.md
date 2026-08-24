@@ -29,8 +29,3 @@ git branch -M main
 git remote add origin https://github.com/<you>/<repo>.git
 git push -u origin main
 ```
-
-Notes
-- Don’t commit your real `.env` (it's in `.gitignore`).
-- Add a `repository` field to `server/package.json` if you want the repo URL included.
-- To create a repo from the command line, use: `gh repo create <you>/<repo>`.
